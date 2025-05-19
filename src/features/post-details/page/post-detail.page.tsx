@@ -76,6 +76,7 @@ export default function PostDetailPage() {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getServerSideProps(context: any) {
   const queryClient = new QueryClient();
   const postId = context.params.id as string;

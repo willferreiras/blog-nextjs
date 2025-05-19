@@ -52,7 +52,7 @@ export default function PostsPage() {
     });
     if (loaderRef.current) observer.observe(loaderRef.current);
     return () => observer.disconnect();
-  }, [hasMore, isFetchingMore]);
+  }, [hasMore, isFetchingMore, loadMore]);
 
   if (isLoading) {
     return (
@@ -83,7 +83,7 @@ export default function PostsPage() {
             <PostsWrapper>
               <PostContainer>
                 {remaining.map((post) => (
-                  <PostCard post={post} />
+                  <PostCard post={post} key={post.id} />
                 ))}
                 {hasMore && (
                   <Stack ref={loaderRef} py={2}>

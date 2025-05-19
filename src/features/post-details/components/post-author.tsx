@@ -1,3 +1,4 @@
+import { User } from "@/features/user-details/models/user.model";
 import { Typography, Avatar, Stack } from "@mui/material";
 import Link from "next/link";
 import styled from "styled-components";
@@ -8,7 +9,7 @@ const AuthorContainer = styled(Stack)`
   margin-top: 0.5rem;
 `;
 
-export default function PostAuthor({ user }: { user: any }) {
+export default function PostAuthor({ user }: { user: User }) {
   return (
     <Link href={`/user/${user.id}`} passHref style={{ textDecoration: "none" }}>
       <AuthorContainer direction="row" spacing={2}>

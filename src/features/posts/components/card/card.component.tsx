@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, useMediaQuery } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 import styled from "styled-components";
 import Link from "next/link";
 import { Post } from "../../models/post.model";

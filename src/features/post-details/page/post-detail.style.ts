@@ -1,4 +1,3 @@
-import { colors } from "@/shared/utils/theme/colors";
 import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 

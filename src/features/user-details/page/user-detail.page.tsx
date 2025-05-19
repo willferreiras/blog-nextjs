@@ -49,7 +49,7 @@ export default function UserDetailPage() {
     });
     if (loaderRef.current) observer.observe(loaderRef.current);
     return () => observer.disconnect();
-  }, [hasMore, isFetchingMore]);
+  }, [hasMore, isFetchingMore, loadMore]);
 
   if (error) return <p>Failed to load.</p>;
 
@@ -72,7 +72,7 @@ export default function UserDetailPage() {
             <PostsWrapper>
               <PostContainer>
                 {remaining.map((post) => (
-                  <PostCard post={post} />
+                  <PostCard post={post} key={post.id} />
                 ))}
                 {hasMore && (
                   <Stack ref={loaderRef} py={2}>
@@ -101,6 +101,7 @@ export default function UserDetailPage() {
   );
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getServerSideProps(context: any) {
   const queryClient = new QueryClient();
   const userId = context.params.id as string;
