@@ -35,7 +35,7 @@ This project is a blog app built with **Next.js** focusing on modern, performant
 ### How to Run Locally
 
 1. Clone the repository  
-   `git clone <your-repo-url>`
+   `git clone https://github.com/willferreiras/blog-nextjs.git`
 2. Install dependencies  
    `npm install` or `yarn install`
 3. Run the development server  
@@ -89,7 +89,7 @@ Este projeto é um blog construído com **Next.js** focado em desenvolvimento mo
 ### Como Rodar Localmente
 
 1. Clone o repositório  
-   `git clone <url-do-seu-repositorio>`
+   `git clone https://github.com/willferreiras/blog-nextjs.git`
 2. Instale as dependências  
    `npm install` ou `yarn install`
 3. Rode o servidor de desenvolvimento  
