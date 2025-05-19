@@ -1,6 +1,8 @@
 # Blog Challenge / Desafio Blog
 
-![Demonstração do projeto](./src/shared/assets/usage.gif)
+👉 **Live Demo on Vercel**: [https://blog-nextjs-liux.vercel.app/](https://blog-nextjs-liux.vercel.app/) 👈
+
+![Demonstração do projeto](./public/usage.gif)
 
 ## English Version
 
