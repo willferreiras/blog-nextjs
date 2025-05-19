@@ -1,0 +1,55 @@
+export const palette = {
+  primaryBranding: "#0F62FE",
+  primaryLighter: "#458FFF",
+  primaryLightest: "#B3D1FF",
+  primaryDarker: "#0B4AC9",
+
+  secondaryBranding: "#D72638",
+  secondaryLighter: "#F95D71",
+  secondaryLightest: "#FDB7C0",
+  secondaryDarker: "#A21A2B",
+
+  neutral900: "#1A202C",
+  neutral800: "#2D3748",
+  neutral700: "#4A5568",
+  neutral600: "#718096",
+  neutral500: "#A0AEC0",
+  neutral400: "#CBD5E0",
+  neutral300: "#E2E8F0",
+  neutral200: "#EDF2F7",
+  neutral100: "#F7FAFC",
+  neutral50: "#FAFAFA",
+  neutralWhite: "#FFFFFF",
+
+  feedbackError: "#E53E3E",
+  feedbackSuccess: "#38A169",
+  feedbackWarning: "#DD6B20",
+  feedbackInfo: "#3182CE",
+
+  surfaceBlack: "#000000",
+  surfaceDarkest: "#1A202C",
+  surfaceDark: "#2D3748",
+  surfaceGrey: "#E2E8F0",
+  surfaceLightGrey: "#F7FAFC",
+  surfaceWhite: "#FFFFFF",
+
+  textBody: "#1A202C",
+} as const;
+
+export const colors = {
+  palette,
+  transparent: "rgba(0, 0, 0, 0)",
+  text: palette.textBody,
+  textTitle: palette.neutral900,
+  background: palette.neutral100,
+  error: palette.feedbackError,
+  success: palette.feedbackSuccess,
+  warning: palette.feedbackWarning,
+  info: palette.feedbackInfo,
+  primaryColor: palette.primaryBranding,
+  secondaryColor: palette.secondaryBranding,
+  primaryDark: palette.primaryDarker,
+  white: palette.neutralWhite,
+  disabled: palette.neutral200,
+  surfaceDark: palette.surfaceDark,
+};
