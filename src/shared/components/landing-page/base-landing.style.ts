@@ -12,12 +12,15 @@ const RootContainer = styled.div`
 const MainContentContainer = styled.div`
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(69, 143, 255, 0.6) 0%,
-    rgba(179, 209, 255, 0.8) 35%,
-    rgba(179, 209, 255, 0.8) 65%,
-    rgba(69, 143, 255, 0.6) 100%
+  background: var(
+    --Color-Gradient-SurfaceH,
+    linear-gradient(
+      90deg,
+      rgba(26, 32, 44, 1) 0%,
+      rgba(11, 74, 201, 0.75) 30%,
+      rgba(11, 74, 201, 0.75) 70%,
+      rgba(26, 32, 44, 1) 100%
+    )
   );
   overflow: hidden;
 `;

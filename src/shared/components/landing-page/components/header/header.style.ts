@@ -6,12 +6,11 @@ const HeaderRootContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr max-content;
   background: var(
-    --Color-Gradient-Header,
+    --Color-Gradient-SurfaceH,
     linear-gradient(
       90deg,
-      ${colors.palette.primaryLighter} 0%,
-      ${colors.palette.primaryDarker} 60%,
-      ${colors.palette.neutral800} 100%
+      ${colors.palette.neutral900} 15%,
+      ${colors.palette.primaryDarker} 75%
     )
   );
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

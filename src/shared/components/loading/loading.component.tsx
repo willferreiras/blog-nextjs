@@ -37,7 +37,7 @@ const LoadingComponent: FC<ILoadingComponentProps> = ({
             style={{ width, height }}
           />
           {!disableText && (
-            <Typography variant="labelLarge" color={colors.palette.neutral600}>
+            <Typography variant="labelLarge" color={colors.white}>
               {title || "Loading"}
             </Typography>
           )}

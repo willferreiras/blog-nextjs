@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import CommentCard from "./comment-card";
 import { Comment } from "../models/comment.model";
+import { colors } from "@/shared/utils/theme/colors";
 
 export default function CommentsSection({ comments }: { comments: Comment[] }) {
   return (
@@ -11,7 +12,7 @@ export default function CommentsSection({ comments }: { comments: Comment[] }) {
         mt: 1,
       }}
     >
-      <Typography variant="h6" gutterBottom>
+      <Typography variant="h6" gutterBottom color={colors.white}>
         Comments
       </Typography>
 
